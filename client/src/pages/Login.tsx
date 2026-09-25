@@ -60,7 +60,7 @@ export default function Login() {
                                 "Signing in..."
                             ) : (
                                 <>
-                                    {loginState ? "Sign In" : "Sign Up"} <ArrowRightIcon className="size-4" />
+                                    {loginState ? "Log In" : "Sign Up"} <ArrowRightIcon className="size-4" />
                                 </>
                             )}
                         </button>

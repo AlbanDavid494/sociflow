@@ -4,7 +4,7 @@ import { ArrowRightIcon, DotIcon } from "lucide-react";
 export default function Hero() {
     return (
         <section className="relative overflow-hidden">
-            {/* Subtle grid */}
+            {/* Subtle grid - check this design*/}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.03)_1px,transparent_1px)] bg-size-[56px_56px] pointer-events-none" />
 
             {/* Red soft glow */}
