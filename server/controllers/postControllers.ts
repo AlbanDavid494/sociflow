@@ -137,7 +137,7 @@ const generation = await Generation.create({
     content,
     mediaUrl,
     mediaType: mediaUrl ? "image" : undefined,
-    tone
+    tone,
 })
 
 res.json(generation)
@@ -207,10 +207,10 @@ export const schedulePost = async (req: AuthRequest, res: Response): Promise<voi
          const post = await Post.create({
             user: req.user?._id,
             content,
-            platform: parsedPlatforms,
+            platforms: parsedPlatforms,
             mediaUrl,
             mediaType,
-            scheduleFor,
+            scheduledFor,
             status,
          })
          res.status(201).json(post)

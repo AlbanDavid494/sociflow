@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const postSchema = new mongoose.Schema({
+const generationSchema = new mongoose.Schema({
     user : {type: mongoose.Schema.Types.ObjectId, ref: "User", required: true},
    prompt: { type: String, required: true },
    content: { type: String, required: true },
@@ -11,4 +11,4 @@ const postSchema = new mongoose.Schema({
    status: { type: String, enum: ["draft", "scheduled", "published", "failed"], default: "scheduled" },
 }, {timestamps: true})
 
-export const Post = mongoose.model("Post", postSchema);
+export const Generation = mongoose.model("Generation", generationSchema);
