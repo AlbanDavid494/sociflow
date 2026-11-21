@@ -9,6 +9,7 @@ const accountSchema = new mongoose.Schema({
     tokenExpiesAt: {type: Date},
     status: {type: String, enum: ["connected", "disconnected"], default: "connected"},
     avatarUrl: {type: String},
+    zernioAccountId: { type: String, required: true },
 }, {timestamps: true})
 
 export const Account = mongoose.model("Account", accountSchema);
